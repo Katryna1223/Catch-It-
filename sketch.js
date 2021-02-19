@@ -71,11 +71,11 @@ function draw() {
   //drawSprites();
   if(score === maxBalls){
     
-    text("You got all the balls in " + time/10 + " seconds! You win! Press r to restart.", 150, 350);
+    text("You got all the balls in " + Math.round(time/50) + " seconds! You win! Press r to restart.", 150, 350);
     gamestate = 'end'; 
   }
 
-  text("Time: " + time/10, 30, 20);
+  text("Time: " + Math.round(time/50), 30, 20);
 }
 
 function keyPressed(){
